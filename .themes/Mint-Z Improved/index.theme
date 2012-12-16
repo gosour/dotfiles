@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mint-Z Improved
+Comment=A mint theme based on Zukitwo, improved
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mint-Z Improved
+MetacityTheme=Mint-X
+IconTheme=Mint-X
+CursorTheme=default
+
