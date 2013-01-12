@@ -10,5 +10,8 @@ eval $(cat ~/.fehbg)
 #start redshiftgui
 redshiftgui &
 
+#start conky
+#conky &
+
 #start wm
 exec awesome
