@@ -41,7 +41,7 @@ local orig = {
     viewidx = awful.tag.viewidx,
 
     taglist = awful.widget.taglist.new,
-    label = awful.widget.taglist.label.all,
+    label = awful.widget.taglist.taglist_label,
 }
 
 -- Return tags with stuff on them, mark others hidden
@@ -100,7 +100,7 @@ awful.tag.viewidx = function (i, screen)
 end
 
 -- Taglist label functions
-awful.widget.taglist.label.all = function (t, args)
+awful.widget.taglist.taglist_label = function (t, args)
     if t.selected or #t:clients() > 0 then
         return orig.label(t, args)
     end
@@ -119,7 +119,7 @@ capi.client.add_signal("new", function(c)
 end)
 
 for screen=1, capi.screen.count() do
-    awful.tag.attached_add_signal(screen, "property::selected", uc)
+    awful.tag.attached_connect_signal(screen, "property::selected", uc)
     capi.screen[screen]:add_signal("tag::attach", ut)
     capi.screen[screen]:add_signal("tag::detach", ut)
 end

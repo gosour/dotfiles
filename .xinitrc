@@ -13,5 +13,9 @@ redshiftgui &
 #start conky
 #conky &
 
+#start urxvt daemon
+urxvtd &
+
 #start wm
 exec awesome
+

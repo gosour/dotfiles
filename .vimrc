@@ -101,7 +101,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 if has('gui_running')
-  set guifont=Consolas\ for\ Powerline\ 13
+  set guifont=Consolas\ for\ Powerline\ 11
 endif
 
 

@@ -4,7 +4,7 @@ Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
-URxvt.font: xft:consolas for powerline :size=13
+URxvt.font: xft:consolas for powerline :size=11
 
 Urxvt*dynamicColors:      true 
 URxvt*utf8:               2 
@@ -23,7 +23,17 @@ URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
 
+!Real Transparency: Using desktop composition
+!urxvt*depth: 32
+!urxvt*background: rgba:0000/0000/0200/c800
 
+!Native Transparency
+!URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*.shading: 60
+!URxvt*fading: 50
+
+!URxvt.iconFile:    /usr/share/icons/Faenza/apps/48/gnome-terminal.png
 
 !TomorrowNight
 #define t_background        #1d1f21
