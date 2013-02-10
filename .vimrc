@@ -89,7 +89,7 @@ if has("gui_running")
 		let g:molokai_original = 1
 		colorscheme molokai
 else
-		colorscheme molokai
+		colorscheme Tomorrow
 endif
 "set background=dark
 
